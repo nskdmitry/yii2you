@@ -1,0 +1,5 @@
+1. Installation of Yii2 Framework on your local web-server:
+php composer.phar create-project yiisoft/yii2-app-basic yoursitename
+2. Rearchivation 'usersupervisor.zip' on folder yoursitename:
+unzip usersupervisor.zip usersupervisor
+3. You can open yoursitename/web/index.php?r=usersupervisor%2Fview now.
