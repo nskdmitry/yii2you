@@ -1,5 +1,28 @@
-1. Installation of Yii2 Framework on your local web-server:
-php composer.phar create-project yiisoft/yii2-app-basic yoursitename
-2. Rearchivation 'usersupervisor.zip' on folder yoursitename:
-unzip usersupervisor.zip usersupervisor
-3. You can open yoursitename/web/index.php?r=usersupervisor%2Fview now.
+  You are installed web server Apache 2.2-2.4 + PHP 5.4 or more flesh before. Now:
+
+	. Install a Yii2 Framework on your local web-server:
+
+composer global require "fxp/composer-asset-plugin:^1.3.1"
+composer create-project yiisoft/yii2-app-basic yoursitename
+
+	. Open config/db.php and set parameters of database coonection.
+
+	. Open config/web.php and set parameters:
+
+
+'request' => ['cookieValidationKey' => '<your secret key>']
+
+	. Extract a archive 'usersupervisor.zip' on /yoursitename/ folder:
+
+unzip usersupervisor.zip  yoursitename/usersupervisor
+cd yoursitename
+
+	. Copy a migration file into the /migrations/ folder:
+
+copy  usersupervisor/migrations/m170504_054741_create_accounts_table.php migrations/m170504_054741_create_accounts_table.php
+
+	. Execute this command to creating and flooding tables on console:
+
+yii migrate
+
+	. You can open yoursitename/web/index.php?r=usersupervisor%2Fview now.

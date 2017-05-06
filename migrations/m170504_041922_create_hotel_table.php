@@ -39,17 +39,17 @@ class m170504_041922_create_hotel_table extends Migration
             'CASCADE'
         );
         
-        $this->insert('hotel', ['name'=>'', 'id_country'=>1, 'rate'=>5]);
-        $this->insert('hotel', ['name'=>'', 'id_country'=>1, 'rate'=>5]);
-        $this->insert('hotel', ['name'=>'', 'id_country'=>1, 'rate'=>5]);
-        $this->insert('hotel', ['name'=>'', 'id_country'=>1, 'rate'=>5]);
-        $this->insert('hotel', ['name'=>'', 'id_country'=>1, 'rate'=>5]);
-        $this->insert('hotel', ['name'=>'', 'id_country'=>1, 'rate'=>5]);
-        $this->insert('hotel', ['name'=>'', 'id_country'=>1, 'rate'=>5]);
-        $this->insert('hotel', ['name'=>'', 'id_country'=>1, 'rate'=>5]);
-        $this->insert('hotel', ['name'=>'', 'id_country'=>1, 'rate'=>5]);
-        $this->insert('hotel', ['name'=>'', 'id_country'=>1, 'rate'=>5]);
-        $this->insert('hotel', ['name'=>'', 'id_country'=>1, 'rate'=>5]);
+        $this->insert('hotel', ['name'=>'Маринс Парк', 'id_country'=>1, 'rate'=>4]);
+        $this->insert('hotel', ['name'=>'Гранд отель "Жемчужина"', 'id_country'=>1, 'rate'=>3]);
+        $this->insert('hotel', ['name'=>'Имеретенский отель', 'id_country'=>1, 'rate'=>4]);
+        $this->insert('hotel', ['name'=>'Baiyoko Sky Hotel', 'id_country'=>2, 'rate'=>4]);
+        $this->insert('hotel', ['name'=>'Royal Cliff Beach Resort', 'id_country'=>2, 'rate'=>5]);
+        $this->insert('hotel', ['name'=>'Pullman Phuket Arcadia', 'id_country'=>2, 'rate'=>5]);
+        $this->insert('hotel', ['name'=>'The Desert Rose', 'id_country'=>3, 'rate'=>5]);
+        $this->insert('hotel', ['name'=>'Sharm Plaza', 'id_country'=>3, 'rate'=>5]);
+        $this->insert('hotel', ['name'=>'Sunrise Holidays', 'id_country'=>3, 'rate'=>5]);
+        $this->insert('hotel', ['name'=>'Six Corners Resort', 'id_country'=>3, 'rate'=>3]);
+        $this->insert('hotel', ['name'=>'Sand Sea Resort Krabi', 'id_country'=>2, 'rate'=>3]);
     }
 
     /**
