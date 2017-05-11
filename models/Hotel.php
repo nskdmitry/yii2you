@@ -37,6 +37,15 @@ class Hotel extends \yii\db\ActiveRecord
         ];
     }
 
+    public function getCountry()
+    {
+        return $this->hasOne(Country::className(), ['id' => 'id_country']);
+    }
+ 
+    public function getCountryName() {
+        return $this->country->name;
+    }
+    
     /**
      * @inheritdoc
      */
@@ -45,8 +54,9 @@ class Hotel extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'name' => 'Name',
-            'id_country' => 'Id Country',
+            'id_country' => 'Country ID',
             'rate' => 'Rate',
+            'countryName' => 'Country'
         ];
     }
 
