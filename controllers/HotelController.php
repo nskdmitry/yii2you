@@ -5,6 +5,7 @@ namespace app\controllers;
 use Yii;
 use app\models\Hotel;
 use app\models\HotelSearch;
+use app\models\Country;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
