@@ -45,7 +45,7 @@ class Hotel extends \yii\db\ActiveRecord
     public function getCountryName() {
         return $this->country->name;
     }
-    
+
     /**
      * @inheritdoc
      */

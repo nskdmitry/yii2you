@@ -43,6 +43,10 @@ class Country extends \yii\db\ActiveRecord
             'name' => 'Name',
         ];
     }
+    
+    public static function getNames(){
+      return \yii\helpers\ArrayHelper::map(Country::find()->select(['id', 'name'])->all(), 'id', 'name');
+    }
 
     /**
      * @return \yii\db\ActiveQuery

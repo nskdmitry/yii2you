@@ -27,7 +27,15 @@ $this->params['breadcrumbs'][] = $this->title;
             //'id',
             'name',
             //'id_country',
-            'countryName',
+            [
+                'attribute' => 'countryName',
+                'label' => 'Country',
+                'format' => 'text',
+                'content' => function($data){
+                    return $data->getCountryName();
+                },
+                'filter' => app\models\Country::getNames()
+            ],
             'rate',
 
             ['class' => 'yii\grid\ActionColumn'],
